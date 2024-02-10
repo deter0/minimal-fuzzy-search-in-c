@@ -71,6 +71,8 @@ int fuzzy_search(const char *text, const char *query, bool build_score, int **sc
   return total_score;
 }
 
+#ifdef FUZZY_TESTING
+
 const char *apps[] = {
     "alacritty",
     "babun",
@@ -163,3 +165,4 @@ int main(void) {
   return 0;
 }
 
+#endif // FUZZY_TESTING
