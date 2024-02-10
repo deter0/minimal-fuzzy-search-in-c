@@ -5,6 +5,8 @@
 #include <time.h>
 #include <stdbool.h>
 
+#include "fuzzy.h"
+
 int fuzzy_search(const char *text, const char *query, bool build_score, int **score, size_t *score_len) {
   // score = int[text_size]{0};
   // For t, t_idx in text
